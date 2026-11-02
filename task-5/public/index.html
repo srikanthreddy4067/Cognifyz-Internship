@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management | Cognifyz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Student Management System</h1>
+    <p>Cognifyz Technologies | Task 5</p>
+</header>
+
+<main class="container">
+
+    <section class="stats">
+        <div class="card">
+            <h3>Total Students</h3>
+            <h2 id="totalStudents">0</h2>
+        </div>
+    </section>
+
+    <section class="panel">
+        <h2 id="formTitle">Add New Student</h2>
+
+        <form id="studentForm">
+            <input type="hidden" id="studentId">
+
+            <input type="text" id="name"
+                placeholder="Student Name" required>
+
+            <input type="email" id="email"
+                placeholder="Email Address" required>
+
+            <button type="submit" id="submitBtn">
+                Add Student
+            </button>
+
+            <button type="button" id="cancelBtn" hidden>
+                Cancel
+            </button>
+        </form>
+    </section>
+
+    <section class="panel">
+        <div class="toolbar">
+            <h2>Student Records</h2>
+            <input type="search" id="search"
+                placeholder="Search students...">
+            <button id="refreshBtn">Refresh</button>
+        </div>
+
+        <p id="status"></p>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="studentList"></tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Developed as part of Cognifyz Full Stack Development Internship</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

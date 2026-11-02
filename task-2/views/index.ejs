@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognifyz - Student Registration</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration</h1>
+        <p>Complete the form to register.</p>
+
+        <% if (error) { %>
+            <p class="error"><%= error %></p>
+        <% } %>
+
+        <form action="/register" method="POST" id="registrationForm">
+            <label for="name">Full Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                value="<%= formData.name %>"
+                placeholder="Enter your full name"
+            >
+            <small id="nameError" class="field-error"></small>
+
+            <label for="email">Email Address</label>
+            <input
+                type="text"
+                id="email"
+                name="email"
+                value="<%= formData.email %>"
+                placeholder="Enter your email"
+            >
+            <small id="emailError" class="field-error"></small>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

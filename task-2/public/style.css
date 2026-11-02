@@ -1,0 +1,107 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f5fa;
+    margin: 0;
+    padding: 40px 16px;
+}
+
+.container {
+    max-width: 420px;
+    margin: 30px auto;
+    padding: 28px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #243b64;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 7px;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    width: 100%;
+    margin-top: 22px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #2459a9;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #173f7d;
+}
+
+.error,
+.field-error {
+    color: #c62828;
+}
+
+.field-error {
+    display: block;
+    margin-top: 5px;
+}
+
+a {
+    color: #2459a9;
+}
+
+/* Responsive design for tablets and mobile phones */
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 16px 12px;
+    }
+
+    .container {
+        margin: 12px auto;
+        padding: 20px 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input,
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .container {
+        max-width: 500px;
+    }
+}
+

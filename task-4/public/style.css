@@ -1,0 +1,43 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: #f2f5fa;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    border: none;
+    border-radius: 14px;
+}
+
+.form-control {
+    padding: 12px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.2);
+}
+
+.btn {
+    padding: 12px;
+}
+
+small.text-danger {
+    display: block;
+    margin-top: 5px;
+}
+
+@media (max-width: 576px) {
+    main.container {
+        padding: 20px 12px !important;
+    }
+
+    .card-body {
+        padding: 20px !important;
+    }
+}
